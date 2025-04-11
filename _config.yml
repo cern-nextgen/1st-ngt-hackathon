@@ -7,6 +7,10 @@ indico: https://indico.cern.ch/event/1517580/
 plugins:
   - "jekyll-github-metadata"
 
+# URL configuration for GitHub Pages
+url: "https://cern-nextgen.github.io" 
+baseurl: "/1st-ngt-hackathon"
+
 menu:
   - name: coroutines
     label: Coroutines in C++
