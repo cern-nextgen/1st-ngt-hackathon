@@ -1,0 +1,13 @@
+--- flamegraph.py
++++ flamegraph-revision.py
+@@ -107,7 +107,9 @@
+ 
+         if "callchain" in event:
+             for entry in reversed(event["callchain"]):
+-                name = entry.get("sym", {}).get("name", "[unknown]")
++                name = entry.get("sym", {}).get("name")
++                if not name:
++                    name = "[{}.{}]".format(event.get("symbol", "unknown"), entry.get("ip"))
+                 libtype = self.get_libtype_from_dso(entry.get("dso"))
+                 node = self.find_or_create_node(node, name, libtype)
+         else:

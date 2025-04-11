@@ -1,3 +1,3 @@
-# Efficient Scientific Computing 2024
+# 1st NGT Hackathon (2025)
 
-This repository contains teaching material and exercises for the XV INFN _International School on Architectures, tools and methodologies for developing efficient large scale scientific computing applications_ ([ESC24](https://agenda.infn.it/event/40488/)), Bertinoro (Italy), 14-24 October 2024.
+This repository contains the material produced for and during the _1st NextGenTriggers Hackathon_ ([NGT Hackathon](https://indico.cern.ch/event/1517580/timetable/)), CERN (IdeaSquare), 07-11 April 2025.
