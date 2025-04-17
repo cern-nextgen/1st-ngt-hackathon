@@ -5,7 +5,7 @@ section: coroutines
 ---
 
 
-[C++20 introduced “coroutines”](https://en.cppreference.com/w/cpp/language/coroutines): 
+In this group, we dealt with [C++20 introduced “coroutines”](https://en.cppreference.com/w/cpp/language/coroutines): 
 
 They are very generic. All aspects of how/what to resume, how the exceptions are handled can be customised in the awaitable classes.
 
