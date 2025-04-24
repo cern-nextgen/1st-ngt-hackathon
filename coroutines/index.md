@@ -10,7 +10,7 @@ In this group, we dealt with [C++20 introduced “coroutines”](https://en.cppr
 They are very generic. All aspects of how/what to resume, how the exceptions are handled can be customised in the awaitable classes.
 
 They allow in-thread suspension and resume with a very low overhead.
-They are self contained and can be resumed() on different threads. This part is typically handled by libraries in thread pool.
+They are self contained and can be resumed() on different threads. This part is typically handled by libraries managing tasks and  thread pools.
 
 Hopefully they could be used in our offline software for efficient asynchronous task scheduling.
 
