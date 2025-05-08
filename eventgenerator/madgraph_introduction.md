@@ -13,21 +13,19 @@ MadGraph is indeed an **automatic meta-code** that writes the code for computing
 ![LHC event](./assets/event.png)
 
 For Hadron colliders, we have:
-$$
-\sigma = \sum_{a,b} \int dx_1 dx_2 d\Phi f_a(x_1, \mu_F) f_b(x_2, \mu_F) \hat{\sigma}_{ab \to X}(s, \mu_F, \mu_R)
-$$
+
+$\sigma = \sum_{a,b} \int dx_1 dx_2 d\Phi f_a(x_1, \mu_F) f_b(x_2, \mu_F) \hat{\sigma}_{ab \to X}(s, \mu_F, \mu_R)$
 
 ### Parton-level cross section
 Where the **parton-level cross section** is $\hat{\sigma}_{ab \to X}(s, \mu_F, \mu_R)$: it can be computed as a series in perturbation theory, expanding by the coupling constant:
-$$
-\hat{\sigma} = \sigma_\text{Born} \bigg( 1 + \frac{\alpha_\text{s}}{2\pi} \sigma^{(1)} + \Big(\frac{\alpha_\text{s}}{2\pi}\Big)^2 \sigma^{(2)} + \Big(\frac{\alpha_\text{s}}{2\pi}\Big)^3 \sigma^{(3)} + ... \bigg)
-$$
+
+$\hat{\sigma} = \sigma_\text{Born} \bigg( 1 + \frac{\alpha_\text{s}}{2\pi} \sigma^{(1)} + \Big(\frac{\alpha_\text{s}}{2\pi}\Big)^2 \sigma^{(2)} + \Big(\frac{\alpha_\text{s}}{2\pi}\Big)^3 \sigma^{(3)} + ... \bigg)$
 
 The terms are, respectively: the Born amplitude (usually known as Leading-Order), the Next-to-Leading order (NLO) correction, the Next-to-NLO (NNLO) correction, the N3LO correction, etc.
 The theoretical uncertainties (factorization and renormalization scales) can be reduced by including higher order corrections.
 
 ### Parton distribution functions (PDFs)
-The PDFs are the functions $$f_a(x_1, \mu_F)$$ and $f_b(x_2, \mu_F)$, they parametrize the *content of the proton* (which is in general very "messy").
+The PDFs are the functions $f_a(x_1, \mu_F)$ and $f_b(x_2, \mu_F)$, they parametrize the *content of the proton* (which is in general very "messy").
 They are tabulated and there are a lot of them: usually experiments are using their proper PDFs.
 The term $x_i$ is the momentum fraction of that proton component in the proton, according to the PDF.
 
@@ -62,9 +60,9 @@ To translate from the FeynRules-syntax (UFO) to the helicity, the library ALOHA 
 
 ### Phase-space integration
 The calculation of cross section or decay widths involve integrations over high-dimension phase space of very peaked function:
-$$
+$
 \sigma = \frac{1}{2s} \int |\mathcal{M}|^2 d\Phi(n)
-$$
+$
 with $\text{Dim}[\Phi(n)]$ has dimension $3n$.
 
 We use Monte-Carlo methods to evaluate integrals.
