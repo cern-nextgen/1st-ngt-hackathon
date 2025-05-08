@@ -28,7 +28,7 @@ menu:
   - name: soa
     label: Structures of Arrays (SoA)
   - name: ml
-    label: Fast inference in ML models
+    label: Fast ML Inference
   - name: hls4ml
 og    label: HLS4ML
 
