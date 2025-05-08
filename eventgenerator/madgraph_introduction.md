@@ -22,6 +22,7 @@ Where the **parton-level cross section** is $\hat{\sigma}_{ab \to X}(s, \mu_F, \
 $$
 \hat{\sigma} = \sigma_\text{Born} \bigg( 1 + \frac{\alpha_\text{s}}{2\pi} \sigma^{(1)} + \Big(\frac{\alpha_\text{s}}{2\pi}\Big)^2 \sigma^{(2)} + \Big(\frac{\alpha_\text{s}}{2\pi}\Big)^3 \sigma^{(3)} + ... \bigg)
 $$
+
 The terms are, respectively: the Born amplitude (usually known as Leading-Order), the Next-to-Leading order (NLO) correction, the Next-to-NLO (NNLO) correction, the N3LO correction, etc.
 The theoretical uncertainties (factorization and renormalization scales) can be reduced by including higher order corrections.
 
